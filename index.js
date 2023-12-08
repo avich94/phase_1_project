@@ -14,7 +14,7 @@ fetch("http://localhost:3000/resortData")
     resortCardDiv.appendChild(resortName)
 
     const resortTemp = document.createElement('h3')
-    resortTemp.textContent = `Temperature: ${resort.temperature} degrees Fahrenheit`
+    resortTemp.textContent = `Temperature: ${resort.temperature}° Fahrenheit`
     resortCardDiv.appendChild(resortTemp)
 
     const resortSnowFall = document.createElement('h3')
