@@ -23,6 +23,10 @@ fetch("http://localhost:3000/resortData")
     resortSnowFall.textContent = `Snowfall: ${resort.snowfall}"`
     cardDiv.appendChild(resortSnowFall)
 
+    const resortWindSpeed = document.createElement('h3')
+    resortWindSpeed.textContent = `Wind: ${resort.windspeed} MPH`
+    cardDiv.appendChild(resortWindSpeed)
+
     resortDataDiv.appendChild(cardDiv)
    })
 });
