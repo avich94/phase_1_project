@@ -4,31 +4,31 @@
         "name": "Eldora",
         "temperature": 35,
         "snowfall": 2,
-        "windspeed": 20,
+        "windspeed": 20
     },
         {
         "name": "Steamboat",
         "temperature": 24,
         "snowfall": 24,
-        "windspeed": 5,
+        "windspeed": 5
         },
         {
         "name": "Winter Park",
         "temperature": 35,
         "snowfall": 6,
-        "windspeed": 10,
+        "windspeed": 10
         },
         {
         "name": "Copper",
         "temperature": 15,
         "snowfall": 8,
-        "windspeed": 13,
+        "windspeed": 13
         },
         {
         "name": "Arapahoe Basin",
         "temperature": 22,
         "snowfall": 16,
-        "windspeed": 4,
+        "windspeed": 4
         }
     ]
 }
