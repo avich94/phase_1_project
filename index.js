@@ -4,7 +4,7 @@ fetch("http://localhost:3000/resortData")
 .then(resortData => {
     const resortDataDiv = document.getElementById('weather-summary')
     resortDataDiv.innerHTML = "";
-    
+
     resortData.map(resort => {
     const resortCardDiv = document.createElement('div')
     resortCardDiv.className = 'resort-card'
@@ -49,6 +49,7 @@ fetch("http://localhost:3000/resortData")
     resortCardDiv.appendChild(likeButton)
     resortDataDiv.appendChild(resortCardDiv)
    })
+   .catch((error) => console.log("Error:", error))
 });
 }
 fetchAllData()
