@@ -15,12 +15,12 @@ document.addEventListener('DOMContentLoaded', function() {
       });
 });
 
-//API fetch call
 function fetchAllData(){
 fetch("http://localhost:3000/resortData")
 .then(response => response.json())
 .then(resortData => {
     const resortDataDiv = document.getElementById('weather-summary')
+    resortDataDiv.innerHTML = "";
 
     resortData.map(resort => {
     const resortCardDiv = document.createElement('div')
@@ -57,8 +57,8 @@ fetch("http://localhost:3000/resortData")
       likes = likes + 1
       likeForecast.textContent = `Likes: ${likes}`
     });
-    resortCardDiv.appendChild(likeButton)
 
+    resortCardDiv.appendChild(likeButton)
     resortDataDiv.appendChild(resortCardDiv)
    })
 });
