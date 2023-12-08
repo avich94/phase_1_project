@@ -22,7 +22,7 @@ div#mouse-event{
     height: 35rem;
     display: inline-grid;
     margin: 1rem 2rem;
-    box-shadow: 3px 4px #e04b56;
+    box-shadow: 3px 4px green;
     background-color: white ;
   }
 
