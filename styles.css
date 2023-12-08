@@ -6,11 +6,12 @@ h1 {
     text-align: center;
 }
 
-#mouse-event{
+div#mouse-event{
     background-color: blue;
     color: azure;
     width: 10rem;
     text-align: center;
+    padding-left: 50%;
 }
 
 .resort-card {
