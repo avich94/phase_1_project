@@ -8,26 +8,43 @@ fetch("http://localhost:3000/resortData")
     const resortDataDiv = document.getElementById('weather-summary')
 
     resortData.map(resort => {
-    const cardDiv = document.createElement('div')
-    cardDiv.className = 'resort-card'
+    const resortCardDiv = document.createElement('div')
+    resortCardDiv.className = 'resort-card'
 
     const resortName = document.createElement('h2')
     resortName.textContent = resort.name
-    cardDiv.appendChild(resortName)
+    resortCardDiv.appendChild(resortName)
 
     const resortTemp = document.createElement('h3')
     resortTemp.textContent = `Temperature: ${resort.temperature} Fahrenheit`
-    cardDiv.appendChild(resortTemp)
+    resortCardDiv.appendChild(resortTemp)
 
     const resortSnowFall = document.createElement('h3')
     resortSnowFall.textContent = `Snowfall: ${resort.snowfall}"`
-    cardDiv.appendChild(resortSnowFall)
+    resortCardDiv.appendChild(resortSnowFall)
 
     const resortWindSpeed = document.createElement('h3')
     resortWindSpeed.textContent = `Wind: ${resort.windspeed} MPH`
-    cardDiv.appendChild(resortWindSpeed)
+    resortCardDiv.appendChild(resortWindSpeed)
 
-    resortDataDiv.appendChild(cardDiv)
+    let likes = 0
+    const likeForecast = document.createElement('p')
+    likeForecast.textContent = `Likes: ${likes}`
+    resortCardDiv.appendChild(likeForecast);
+
+    const likeButton = document.createElement('button')
+    likeButton.className = 'like-btn'
+    likeButton.textContent = "Like: 👍"
+    likeButton.name = resort.name
+    resortCardDiv.appendChild(likeButton)
+
+    likeButton.addEventListener("click", () => {
+      likes = likes + 1
+      likeForecast.textContent = `Likes: ${likes}`
+    });
+    resortCardDiv.appendChild(likeButton)
+
+    resortDataDiv.appendChild(resortCardDiv)
    })
 });
 }
