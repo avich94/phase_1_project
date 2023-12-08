@@ -3,7 +3,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const commentForm = document.getElementById('comment-form');
     const commentInput = document.getElementById('comment-input');
   
-
+    commentForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const comment = commentInput.value.trim()
+        if (comment !== '') {
+          const commentItem = document.createElement('div');
+          commentItem.textContent = comment
+          commentsList.appendChild(commentItem);
+          commentInput.value = '';
+        }
+      });
 });
 
 //API fetch call
