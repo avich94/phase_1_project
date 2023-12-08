@@ -1,4 +1,3 @@
-
 function fetchAllData(){
 fetch("http://localhost:3000/resortData")
 .then(response => response.json())
@@ -25,6 +24,11 @@ fetch("http://localhost:3000/resortData")
     const resortWindSpeed = document.createElement('h3')
     resortWindSpeed.textContent = `Wind: ${resort.windspeed} MPH`
     resortCardDiv.appendChild(resortWindSpeed)
+
+    const resortImage = document.createElement('img')
+    resortImage.className = 'resort-card'
+    resortImage.src = resort.img
+    resortCardDiv.appendChild(resortImage)
 
     let likes = 0
     const likeForecast = document.createElement('p')
@@ -64,8 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
           commentInput.value = '';
         }
       });
-      
-    const mouseOver = document.getElementById("mouse-event")
+      const mouseOver = document.getElementById("mouse-event")
       mouseOver.addEventListener('mouseover', () => {
         alert("It's a POW day!")
     })
