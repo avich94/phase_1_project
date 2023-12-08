@@ -15,6 +15,10 @@ fetch("http://localhost:3000/resortData")
     resortName.textContent = resort.name
     cardDiv.appendChild(resortName)
 
+    const resortTemp = document.createElement('h3')
+    resortTemp.textContent = `Temperature: ${resort.temperature} Fahrenheit`
+    cardDiv.appendChild(resortTemp)
+
     resortDataDiv.appendChild(cardDiv)
    })
 });
