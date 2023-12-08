@@ -4,31 +4,36 @@
         "name": "Eldora",
         "temperature": 35,
         "snowfall": 2,
-        "windspeed": 20
+        "windspeed": 20,
+        "img": "https://www.coloradoski.com/wp-content/uploads/2020/01/11119-Eldora-Opening-DAy_0.jpeg"
     },
         {
         "name": "Steamboat",
         "temperature": 24,
         "snowfall": 24,
-        "windspeed": 5
+        "windspeed": 5,
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Steamboat_springs_ski_resort.jpg/1280px-Steamboat_springs_ski_resort.jpg"
         },
         {
         "name": "Winter Park",
         "temperature": 35,
         "snowfall": 6,
-        "windspeed": 10
+        "windspeed": 10,
+        "img": "https://hikebiketravel.com/wp-content/uploads/2017/02/Winter-Park-13.jpg"
         },
         {
         "name": "Copper",
         "temperature": 15,
         "snowfall": 8,
-        "windspeed": 13
+        "windspeed": 13,
+        "img": "https://www.coloradormr.com/custimages/Website%20Pages/Winter%20Activities/CopperMountainWinter.png"
         },
         {
         "name": "Arapahoe Basin",
         "temperature": 22,
         "snowfall": 16,
-        "windspeed": 4
+        "windspeed": 4,
+        "img": "https://cdn.5280.com/2020/04/2019-7-29_PD_AB_BluebirdDay_0001-960x640.jpg"
         }
     ]
 }
