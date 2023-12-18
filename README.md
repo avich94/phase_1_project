@@ -17,7 +17,7 @@ Powder Day Alert:
 A special section changes its content when the user hovers over it, providing a fun alert indicating a "It's a POW day!"
 
 Styling:
-The application is styled with a clean and responsive design using Aqua as the background color. Resort cards created with a border, padding, and a green box shadow.
+The application is lightly styled with CSS. Resort cards created with a border, padding, and a green box shadow.
 Images in the resort cards are displayed with a maximum size of 100x100 pixels.
 
 Usage:
@@ -27,7 +27,3 @@ Dependencies
 
 This project relies on a backend API at http://localhost:3000/resortData for resort weather data. Ensure that the API is running and accessible.
 
-Getting Started:
-Include the provided JavaScript file (index.js) in your HTML.
-Link the provided CSS file (styles.css) for styling.
-Customize the API endpoint if needed in the fetchAllData function. Open the HTML file in a web browser to view the Powder Hounds Weather application.
