@@ -1,4 +1,3 @@
-function fetchAllData(){
 fetch("http://localhost:3000/resortData")
 .then(response => response.json())
 .then(resortData => {
@@ -51,26 +50,22 @@ fetch("http://localhost:3000/resortData")
    })
    .catch((error) => console.log("Error:", error))
 });
-}
-fetchAllData()
 
-document.addEventListener('DOMContentLoaded', () => {
-    const commentsList = document.getElementById('list');
-    const commentForm = document.getElementById('comment-form');
-    const commentInput = document.getElementById('comment-input');
+const commentsList = document.getElementById('list');
+const commentForm = document.getElementById('comment-form');
+const commentInput = document.getElementById('comment-input');
   
-        commentForm.addEventListener('submit', function(event) {
-        event.preventDefault();
-        const comment = commentInput.value.trim()
+    commentForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const comment = commentInput.value.trim()
         if (comment !== '') {
-          const commentItem = document.createElement('div');
-          commentItem.textContent = comment
-          commentsList.appendChild(commentItem);
-          commentInput.value = '';
+        const commentItem = document.createElement('div');
+        commentItem.textContent = comment
+        commentsList.appendChild(commentItem);
+        commentInput.value = '';
         }
-      });
-      const mouseOver = document.getElementById("mouse-event")
-      mouseOver.addEventListener('mouseover', () => {
-        alert("It's a POW day!")
-    })
+    });
+    const mouseOver = document.getElementById("mouse-event")
+    mouseOver.addEventListener('mouseover', () => {
+    alert("It's a POW day!")
 });
