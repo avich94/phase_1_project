@@ -4,7 +4,7 @@ fetch("http://localhost:3000/resortData")
     const resortDataDiv = document.getElementById('weather-summary')
     resortDataDiv.innerHTML = "";
 
-    resortData.map(resort => {
+    resortData.forEach(resort => {
     const resortCardDiv = document.createElement('div')
     resortCardDiv.className = 'resort-card'
 

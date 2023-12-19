@@ -8,7 +8,7 @@
         "img": "https://www.coloradoski.com/wp-content/uploads/2020/01/11119-Eldora-Opening-DAy_0.jpeg"
     },
         {
-        "name": "Steamboat",
+        "name": "Steamboat", 
         "temperature": 24,
         "snowfall": 24,
         "windspeed": 5,
