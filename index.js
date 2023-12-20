@@ -2,7 +2,6 @@ fetch("http://localhost:3000/resortData")
 .then(response => response.json())
 .then(resortData => {
     const resortDataDiv = document.getElementById('weather-summary')
-    resortDataDiv.innerHTML = "";
 
     resortData.forEach(resort => {
     const resortCardDiv = document.createElement('div')
