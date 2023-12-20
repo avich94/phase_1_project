@@ -47,7 +47,6 @@ fetch("http://localhost:3000/resortData")
     resortCardDiv.appendChild(likeButton)
     resortDataDiv.appendChild(resortCardDiv)
    })
-   .catch((error) => console.log("Error:", error))
 });
 
 const commentsList = document.getElementById('list');
