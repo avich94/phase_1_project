@@ -55,8 +55,8 @@ const commentForm = document.getElementById('comment-form');
 const commentInput = document.getElementById('comment-input');
   
     commentForm.addEventListener('submit', event => {
-    event.preventDefault();
-    const comment = commentInput.value.trim()
+    event.preventDefault()
+    const comment = commentInput.value
         if (comment !== '') {
         const commentItem = document.createElement('div');
         commentItem.textContent = comment
