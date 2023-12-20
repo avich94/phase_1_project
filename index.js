@@ -54,7 +54,7 @@ const commentsList = document.getElementById('list');
 const commentForm = document.getElementById('comment-form');
 const commentInput = document.getElementById('comment-input');
   
-    commentForm.addEventListener('submit', function(event) {
+    commentForm.addEventListener('submit', event => {
     event.preventDefault();
     const comment = commentInput.value.trim()
         if (comment !== '') {
