@@ -36,7 +36,6 @@ fetch("http://localhost:3000/resortData")
     const likeButton = document.createElement('button')
     likeButton.className = 'like-btn'
     likeButton.textContent = "Like: 👍"
-    likeButton.name = resort.name
     resortCardDiv.appendChild(likeButton)
 
     likeButton.addEventListener("click", () => {
